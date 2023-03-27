@@ -1,0 +1,23 @@
+Variaveis
+
+Variaveis simples só consegue armazenar um valor por vez.
+
+variaveis compostas devem ser capazes de armazenar varios valores em uma mesma estrutura.
+
+ cada vetor(array)É uma variavem que contem varios elementos , cada elemento é composto por seu valor e por uma chave de identificação 
+
+num[3] = 6  seleciona o lugar dele na ordem do vetor 
+
+num.push() seleciona um valor expecifico para o vetor
+
+num.lenght  sem parenteses no JavaScript  , comprimrnto do vetor
+
+num.sort() colocar os numeros em ordem crescente
+
+
+
+
+for  inicianizaçao  , teste logico e o incremento.
+
+
+num.indexOf(7) buscar valor

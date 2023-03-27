@@ -1,0 +1,28 @@
+Aritimética
+
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2,5
+5 % 2 = 1 Resto da divisão
+5 ** 2 = 25 
+
+
+Ordem de precedência
+()
+**
+*  /  %
++ -
+
+O método Document.write() grava uma sequência de 
+caracteres em um documento aberto por document.open() (en-US).
+
+Nota: à medida que document.write grava no fluxo de documentos, chamando document.write 
+em um documento fechado (carregado) invoca automaticamente document.open, que limpará o documento.
+
+
+
+Primiro são os aritimeticos , relacioianmis e por fim os logicos 
+
+ primeiro o Não  ,  E   e  depopis o OU
+ 

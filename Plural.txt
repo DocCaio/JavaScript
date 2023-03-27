@@ -1,0 +1,1 @@
+getEkementsById ('')  plural usar colchetes []
