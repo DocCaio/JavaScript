@@ -1,0 +1,12 @@
+numero para string  
+
+String(n)
+
+n.to.string()
+
+
+string para numero 
+
+Number.parseInt(n)
+
+Nuber.parseFloat(n)

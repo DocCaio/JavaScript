@@ -1,0 +1,1 @@
+DOM dar acesso ao elentos da pagina  ,ele possiu arvore , cada pagina posseui sua arvore

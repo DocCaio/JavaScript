@@ -1,0 +1,26 @@
+ switch  () {
+
+case valor 1 :
+break     é obrigatorio
+
+case valor 2 :
+
+break
+
+
+case valor 3 :
+
+break
+
+
+default :  vai para ele se nenhuma  dos cades for satisfatoria
+
+}
+
+
+
+
+
+
+
+new Date()  D é sempre mausculo

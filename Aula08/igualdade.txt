@@ -1,0 +1,9 @@
+ 5 == 5 true
+ 5 == '5' true    O javaScript nao testa o tipo , ele testa a grandeza
+ 5 === '5' false   ele testa o igualdede completa
+ 5 === 5 true
+
+
+ordem
+
+ primero o nao (==)  depois o e(&&) depois o ou(||)

@@ -1,0 +1,2 @@
+var n = 3
+n = n + 4  so pode usar a forma somplificada n+= 4 quando o N recebe ele mesmo mais outro número não pode n + x por exemplo

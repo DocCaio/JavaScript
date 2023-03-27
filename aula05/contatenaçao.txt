@@ -1,0 +1,42 @@
+ sinal de +  pode ser Concatenação e soma
+
+number + number  soma
+
+string + string Concatenação
+
+int numemos inteiros 
+
+
+float numeros reais
+
+Number.parseInt() soma do reais converter
+
+Number.parseFloat() pode somasr intiros e reais converter
+
+Number() soma todos
+
+
+
+
+String()
+n.to.String() 
+
+
+
+'eu estopu aprendendo s' // nãp faz interpolaçao
+'Eu estou aprendnedo' + s // usa concatenação
+`Eu estou aprendendo ${s}` // usa template string
+var s = 'eu estou aprendndo'
+
+
+s.lenght // quantos caracteres a string tem
+s.toUpperCase() // tudo para 'Mauculas'
+s.toLowerCase () // tudo para 'minusculas'
+
+
+n1.toFixed(2) numeros certos
+n1.toLocaleString('pt-Br', {style: 'currency' , currency: 'BRL'})  fazer os $ nos numeros 
+
+
+
+currency - dinhero valor monetario

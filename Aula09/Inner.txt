@@ -1,0 +1,14 @@
+InnerHTML aceita o  negrito na pagina porem com ALERTE puxa as tags filhas       aceita tags
+
+InnerText nao puxa o negrito porem copm Alert , ele não puxa as  tags filhas         so muda otexto
+
+Div é representado <div> </div>
+Class é representada por . (ponto)
+
+ Pragrafos <p> </P>  para selecionar usar getElementByTagName('p') selecionar com [] paragrafos inicam-se com 0 e nao 1
+
+getElementsByName  no plural usar [] singular usar ()
+
+toda <div> </div> é representada por #  toda class é representada por . (ponto final)
+
+ <input> caixa de texto

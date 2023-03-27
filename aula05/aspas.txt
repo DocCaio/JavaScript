@@ -1,0 +1,10 @@
+var s1 = "JavaScript" 
+
+var s2 = 'Curso em video'
+
+var s3 = `Guanabara`
+
+'eu estopu aprendendo s' // nãp faz interpolaçao
+'Eu estou aprendnedo' + s // usa concatenação
+`Eu estou aprendendo ${s}` // usa template string
+var s = 'eu estou aprendndo'
