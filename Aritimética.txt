@@ -25,4 +25,7 @@ em um documento fechado (carregado) invoca automaticamente document.open, que li
 Primiro são os aritimeticos , relacioianmis e por fim os logicos 
 
  primeiro o Não  ,  E   e  depopis o OU
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators
  
