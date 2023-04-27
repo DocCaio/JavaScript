@@ -78,6 +78,14 @@ function draw() {
   //}
 //}
 
+
+//function bolinhaNaoFicaPresa(){
+ // if (XBolinha - raio < 0){
+ // XBolinha = 23
+ // }
+//}
+
+
 function mostraBolinha(){
   circle(xBolinha, yBolinha, diametro);
 }
