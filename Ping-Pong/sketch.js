@@ -18,6 +18,7 @@ let yRaquete = 150;
 let xRaqueteOponente = 585;
 let yRaqueteOponente = 150;
 let velocidadeYOponente;
+//let chanceDeErrar = 0;
 
 let colidiu = false;
 
@@ -56,6 +57,26 @@ function draw() {
   incluiPlacar();
   marcaPonto();
 }
+
+//function movimentaRaqueteOponente(){
+  //velocidadeYOponente = yBolinha -yRaqueteOponente - raqueteComprimento / 2 - 30;
+  //yRaqueteOponente += velocidadeYOponente + chanceDeErrar
+ // calculaChanceDeErrar()
+//}
+
+//function calculaChanceDeErrar() {
+  //if (pontosDoOponente >= meusPontos) {
+   // chanceDeErrar += 1
+    //if (chanceDeErrar >= 39){
+   // chanceDeErrar = 40
+   // }
+  //} else {
+   // chanceDeErrar -= 1
+   // if (chanceDeErrar <= 35){
+    //chanceDeErrar = 35
+   // }
+  //}
+//}
 
 function mostraBolinha(){
   circle(xBolinha, yBolinha, diametro);
