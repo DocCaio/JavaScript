@@ -1,22 +1,30 @@
 
-function x() {
+    function pulaLinha() {
 
-        document.write("<br>");
-        document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+        }
 
-}
+    function mostra(frase ){
 
-var ano = 2016;
+    document.write(frase);
+        }
 
-    document.write("Flávio tem " + (ano - 1977) + " anos");
+    mostra("Olá pessoal!");
+
+    var ano = 2016;
+
+    mostra("Flávio tem " + (ano - 1977) + " anos");
 
     pulaLinha();
 
-   document.write("Joaquim tem " + (ano - 1996) + " anos");
+    mostra("Joaquim tem " + (ano - 1996) + " anos");
 
-   pulaLinha();
+    pulaLinha();
 
-   ano = 2017;
+    ano = 2017;
 
-   document.write("Barney tem " + (ano - 1976) + " anos");
+    mostra("Barney tem " + (ano - 1976) + " anos");
+
+
 
