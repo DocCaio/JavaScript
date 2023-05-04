@@ -10,11 +10,11 @@ var ano = 2016;
 
     document.write("Flávio tem " + (ano - 1977) + " anos");
 
-x();
+    pulaLinha();
 
    document.write("Joaquim tem " + (ano - 1996) + " anos");
 
-x();
+   pulaLinha();
 
    ano = 2017;
 
