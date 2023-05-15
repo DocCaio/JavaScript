@@ -1,5 +1,6 @@
-var tela = document.querySelector('canvas');
-var pincel = tela.getContext('2d');
+
+let tela = document.querySelector('canvas');
+let pincel = tela.getContext('2d');
 pincel.fillStyle = 'lightgray';
 pincel.fillRect(0, 0, 600, 400);
 
@@ -11,14 +12,17 @@ function desenhaCirculo(x, y, raio) {
     pincel.fill();
 }
 
-    function limpaTela() {
+function limpaTela() {
+pincel.clearRect(0, 0, 600, 400);
+}
 
-        pincel.clearRect(0, 0, 600, 400);
+let x = 20;
 
-    }
+function atualizaTela() {
 
-    for(var x = 20; x < 600; x++) {
-        limpaTela();
-        desenhaCirculo(x, 20, 10);
+limpaTela();
+desenhaCirculo(x, 20, 10);
+x++;
+}
 
-    }
+setInterval(atualizaTela, 10);
