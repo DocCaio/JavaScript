@@ -1,0 +1,8 @@
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Equality_comparisons_and_sameness#igualdade_ampla_usando
+
+
+= recebe
+
+== igual
+
+=== comapara valor e tipo
