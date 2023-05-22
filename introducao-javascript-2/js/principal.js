@@ -1,18 +1,18 @@
-var titulo = document.querySelector(".titulo");
+let titulo = document.querySelector(".titulo");
 titulo.textContent = "Aparecida Nutricionista";
 
-var paciente = document.querySelector("#primeiro-paciente");
+let paciente = document.querySelector("#primeiro-paciente");
 
-var tdPeso = paciente.querySelector(".info-peso");
-var peso = tdPeso.textContent;
+let tdPeso = paciente.querySelector(".info-peso");
+let peso = tdPeso.textContent;
 
-var tdAltura = paciente.querySelector(".info-altura");
-var altura = tdAltura.textContent;
+let tdAltura = paciente.querySelector(".info-altura");
+let altura = tdAltura.textContent;
 
-var tdImc = paciente.querySelector(".info-imc");
+let tdImc = paciente.querySelector(".info-imc");
 
-var pesoEhValido = true;
-var alturaEhValida = true;
+let pesoEhValido = true;
+let alturaEhValida = true;
 
 if (peso <= 0 || peso >= 1000) {
     console.log("Peso inválido!");
@@ -28,5 +28,40 @@ if (altura <= 0 || altura >= 3.00) {
 
 if (pesoEhValido && alturaEhValida) {
     var imc = peso / (altura * altura);
-    tdImc.textContent = imc;
+    tdImc.textContent = imc.toFixed(2);
 }
+
+const botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const form = document.querySelector("#form-adiciona");
+
+    let nome = form.nome.value;
+    let peso = form.peso.value;
+    let altura = form.altura.value;
+    let gordura = form.gordura.value;
+
+    let pacienteTr = document.createElement("tr");
+
+    let nomeTd = document.createElement("td");
+    let pesoTd = document.createElement("td");
+    let alturaTd = document.createElement("td");
+    let gorduraTd = document.createElement("td");
+    let imcTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+
+    pacienteTr.appendChild(nomeTd);
+    pacienteTr.appendChild(pesoTd);
+    pacienteTr.appendChild(alturaTd);
+    pacienteTr.appendChild(gorduraTd);
+
+    var tabela = document.querySelector("#tabela-pacientes");
+
+    tabela.appendChild(pacienteTr);
+
+});
