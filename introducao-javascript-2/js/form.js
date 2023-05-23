@@ -34,3 +34,19 @@ botaoAdicionar.addEventListener("click", function(event) {
     tabela.appendChild(pacienteTr);
 
 });
+
+function paciente(form) {
+
+let paciente = {
+    nome: form.nome.value,
+    paso: form.peso.value,
+    altura: form.altura.value,
+    gordura: focus.gordura.value,
+    imc: calculaImc(form.peso.value , form.altura.value)
+
+}
+
+return paciente;
+
+}
+
