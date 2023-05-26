@@ -1,0 +1,16 @@
+Pront de comando 
+
+node -v  verifica versão do node
+
+mkdir + nome  cria pasta
+
+cd + nome  para entar napasta
+
+code .  par abirir o vs code
+
+npm init -y  criar projeto 
+
+npm start para testar no terminal 
+
+
+
