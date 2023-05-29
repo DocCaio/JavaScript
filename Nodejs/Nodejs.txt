@@ -6,7 +6,7 @@ mkdir + nome  cria pasta
 
 cd + nome  para entar napasta
 
-code .  par abirir o vs code
+code .  para abirir o vs code
 
 npm init -y  criar projeto 
 
