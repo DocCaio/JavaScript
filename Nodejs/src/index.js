@@ -1,16 +1,44 @@
-function hello() {
-  console.log("Hello"); 
+function condicional() {
+  const numero = 6;
+  if (numero + 3 === 10) {
+    console.log("Soma certa");
+
+  } else if (numero + 4 === 10) {
+
+  }else {
+    console.log("Soma errada");
+  }
+}
+
+
+condicional();
+
+
+
+//function hello(nome) {
+ // console.log(`Meu nome  é ${nome}`);
+ // }
+
+  //const nome = "Pedro"
+
+  //hello(nome);
+
+
+
+
+//function hello() {
+  //console.log("Hello"); 
    
 
-    } 
+   // } 
 
-    function helloTwo() {
-        console.log("Hello2");
-        hello();
-    }
+   // function helloTwo() {
+    //    console.log("Hello2");
+    //    hello();
+   // }
 
 
-helloTwo();
+//  helloTwo();
 
 
 // if(true) {
