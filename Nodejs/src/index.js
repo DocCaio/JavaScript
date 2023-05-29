@@ -1,14 +1,35 @@
 function condicional() {
-  const numero = 6;
-  if (numero + 3 === 10) {
-    console.log("Soma certa");
+  const fruta = "Maça";
 
-  } else if (numero + 4 === 10) {
-
-  }else {
-    console.log("Soma errada");
+  switch(fruta) {
+    case "Banana":
+      console.log("É banana")
+      break;
+      case "Uva":
+        console.log("É Uva")
+        break;
+        case "Maça":
+          console.log("É maça")
+          break;
+          default:
+          console.log("Nenhuma das frutas");
   }
 }
+
+
+
+
+//function condicional() {
+//  const numero = 6;
+ // if (numero + 3 === 10) {
+ //   console.log("Soma certa");
+
+ // } else if (numero + 4 === 10) {
+
+ // }else {
+ //   console.log("Soma errada");
+ // }
+//}
 
 
 condicional();
