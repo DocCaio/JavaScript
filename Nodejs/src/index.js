@@ -1,20 +1,30 @@
-function condicional() {
-  const fruta = "Maça";
-
-  switch(fruta) {
-    case "Banana":
-      console.log("É banana")
-      break;
-      case "Uva":
-        console.log("É Uva")
-        break;
-        case "Maça":
-          console.log("É maça")
-          break;
-          default:
-          console.log("Nenhuma das frutas");
+function repeticao() {
+  for(var i = 0 ; i < 9; i++) {
+    console.log(`O valor atual é ${i}`);
   }
+  
 }
+
+repeticao();
+
+
+//function condicional() {
+ // const fruta = "Maça";
+
+ // switch(fruta) {
+   // case "Banana":
+     // console.log("É banana")
+      //break;
+      //case "Uva":
+       // console.log("É Uva")
+       // break;
+        //case "Maça":
+         // console.log("É maça")
+         // break;
+         // default:
+         // console.log("Nenhuma das frutas");
+ // }
+//}
 
 
 
@@ -32,7 +42,7 @@ function condicional() {
 //}
 
 
-condicional();
+//condicional();
 
 
 
