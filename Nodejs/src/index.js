@@ -1,11 +1,41 @@
-function repeticao() {
-  for(var i = 0 ; i < 9; i++) {
-    console.log(`O valor atual é ${i}`);
-  }
-  
-}
+//function metodos() {
+ // const carros = {
+  //  {
+   //   nome: "FOX",
+   //   ano: 2005,
+    //  km: 15000,
+    //  marca:"volkswagen"
+  //  },
+  //  {
+  //    nome: "Gol",
+   //   ano: 2017,
+//km: 18000,
+    //  marca: "volkswagen",
+  // },
+  //  {
+    //  nome: "Uno",
+    //  ano: 2023,
+    //  km: 2000,
+     // marca: "Fiat",
+    //},
+  //};
+   //carros.map((item) => console.log(item.nome));
+   //console.log(carros.filter((carros) => caaros.marca === "volkswagen"));
+//}
 
-repeticao();
+//metodos();
+
+
+
+
+//function repeticao() {
+ // for(var i = 0 ; i < 9; i++) {
+  // console.log(`O valor atual é ${i}`);
+ // }
+  
+//}
+
+//repeticao();
 
 
 //function condicional() {
