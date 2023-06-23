@@ -1,0 +1,2 @@
+o método includes() confere se o elemento passado por parâmetro está incluso em uma lista;
+o método indexOf() retorna o índice do elemento passado por parâmetro.
