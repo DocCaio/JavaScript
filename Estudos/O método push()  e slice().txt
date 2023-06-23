@@ -1,0 +1,4 @@
+O método push() adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+
+
+O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O array original não é modificado.
