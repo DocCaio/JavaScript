@@ -4,6 +4,7 @@ let somasDasNotas = 0;
 
 notas.forEach(function (nota) {
   somasDasNotas += nota;
+  
 });
 
 const media = somasDasNotas / notas.length;
