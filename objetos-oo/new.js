@@ -11,12 +11,28 @@ function User(nome , email) {
 //const novoUser = new User('Juliana' , 'J@j.com')
 //console.log(novoUser.exibirInfos())
 
-function Admin(role) {
-    User.call(this, 'Juliana,' , 'j@j.com')
-    this.role = role || 'estudante'
+//function Admin(role) {
+   // User.call(this, 'Juliana,' , 'j@j.com')
+  //  this.role = role || 'estudante'
+//}
+
+//Admin.prototype = Object.create(User.prototype)
+//const novoUser = new Admin('admin')
+//console.log (novoUser.exibirInfos())
+//console.log(novoUser.role)
+
+const user = {
+    init: function(nome, email) {
+        this.nome = nome
+        this.email = email
+    },
+
+    exibirInfos: function(nome) {
+        return nome
+    }
 }
 
-Admin.prototype = Object.create(User.prototype)
-const novoUser = new Admin('admin')
-console.log (novoUser.exibirInfos())
-console.log(novoUser.role)
+const novoUser = object.create(user)
+novoUser.init('Julaina' ,'j@j.com')
+console.log(novoUser.exibirInfos())
+//console.log(user.isPrototypeOf(novoUser))
