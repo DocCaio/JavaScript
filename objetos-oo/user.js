@@ -12,23 +12,52 @@ export default  class User {
             this.#ativo = ativo
         }
 
-        get nome() {
+        get nome() {  //Pode conter lógica de condicional 
             return this.#nome
         }
 
-        montaObjUser() {
-            return({
-                nome: this.#nome,
-                email: this.#email,
-                nascimento: this.#nascimento,
-                role: this.#role,
-                ativo: this.#ativo
-            })
+        get email() {
+            return this.#email
         }
 
+
+        get nascimento() {
+            return this.#nascimento
+        }
+
+        get role() {
+            return this.#role
+        }
+
+        get ativo() {
+            return this.#ativo
+        }
+
+        set nome(novoNome) {
+            this.#nome = novoNome
+        }
+
+
+       // montaObjUser() {
+           // return({
+             //   nome: this.#nome,
+              //  email: this.#email,
+             //   nascimento: this.#nascimento,
+              //  role: this.#role,
+              //  ativo: this.#ativo
+           // })
+       // }
+
         exibirInfos() {
-            const objUser = this.#montaObjUser()
-            return `${objUser.#nome} , ${objUse.#email}   ${objUse.#nascimento} ${objUse.#role} ${objUse.#ativo}`
+            if (novoNome === '') {
+                throw new Error ('fotmato não válido')
+
+            }
+            this.#nome = novoNome
+            novoAdmin.nome = ''
+            console.log(novoAdmin.nome)
+            //const objUser = this.#montaObjUser()
+            return `${this.nome} , ${this.email}   ${this.#ascimento} ${this.role} ${this.ativo}`
         }
 }
 
