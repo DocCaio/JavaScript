@@ -27,6 +27,10 @@ function ordena(parte1, parte2) {
         }
     }
 
+    return resultado.concat(posicaoAtualLista1 < parte1.lenght 
+        ? parte1.slice(posicaoAtualLista1) 
+        : parte2.slice(posicaoAtualLista2))
+
 }
 
 console.log(mergeSort(listaLivros));
