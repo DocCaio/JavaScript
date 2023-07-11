@@ -9,5 +9,18 @@ function encontraMenores(pivo, array) {
           menores++
      }
     }
-    return menores 
+    trocaLugar(array, array.indexof(pivo), menores)
+    return array
 }
+
+
+function trocaLugar(array, de , para) {
+    const elem1 = array[de]
+    const elem2 = array[para]  
+
+    array[de] = elem1
+    array[para] = elem2 
+}
+
+
+console.log(encontraMenores(listaLivros[2], listaLivros));
