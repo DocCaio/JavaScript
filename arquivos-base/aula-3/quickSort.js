@@ -17,6 +17,8 @@ function quickSort(array, esquerda, direita) {
 
 
 function pasticiona(array, esquerda , direita){
+    console.log('array' , array)
+    console.log('esquerda' ,'direita', esquerda , direita)
     let pivo = array[Math.floor((esquerda + direita) / 2)]
     let atualEsquerda = esquerda; //0
     let atualDireita = direita; //10
