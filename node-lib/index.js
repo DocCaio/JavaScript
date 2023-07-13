@@ -1,5 +1,6 @@
 import fs from 'fs';
 import chalk from 'chalk';
+import { error } from 'console';
 
 function trataErro (erro) {
     console.log(erro);
@@ -7,14 +8,20 @@ function trataErro (erro) {
 }
 
 function pegaArquivo(caminhoDoArquivo) {
-    const encoding = 'utf-8';
-    fs.readFile(caminhoDoArquivo, encoding, (erro, texto) => {
-         if (erro) {
-            trataErro(erro);
-         }
+   const encoding = 'utf-8';
+    fs.promises
+       .readFile(caminhoDoArquivo, encoding)
+       .then((texto) => console.log(chalk.green(texto)))
+       .catch (trataErro)
 
-        console.log(chalk.green(texto));
-    })
-}
 
-pegaArquivo('./arquivos/texto.md');
+    }
+     //    if (erro) {
+          //  trataErro(erro);
+      //   }
+
+     //   console.log(chalk.green(texto));
+   // })
+//}
+
+//pegaArquivo('./arquivos/texto.md');
