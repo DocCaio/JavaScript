@@ -7,15 +7,24 @@ function trataErro (erro) {
     throw new Error(chalk.red(erro.code, 'não há arquivos no diretório'))
 }
 
+// async/await
+
 function pegaArquivo(caminhoDoArquivo) {
-   const encoding = 'utf-8';
-    fs.promises
-       .readFile(caminhoDoArquivo, encoding)
-       .then((texto) => console.log(chalk.green(texto)))
-       .catch (trataErro)
+    const encoding = 'utf-8';
+    const texto = fs.promises.readFile(caminhoDoArquivo, encoding)
+    console.log(texto);
+}
+
+// promeses com then()
+//function pegaArquivo(caminhoDoArquivo) {
+   //const encoding = 'utf-8';
+   // fs.promises
+     //  .readFile(caminhoDoArquivo, encoding)
+      // .then((texto) => console.log(chalk.green(texto)))
+      // .catch (trataErro)
 
 
-    }
+   // }
      //    if (erro) {
           //  trataErro(erro);
       //   }
@@ -24,4 +33,4 @@ function pegaArquivo(caminhoDoArquivo) {
    // })
 //}
 
-//pegaArquivo('./arquivos/texto.md');
+pegaArquivo('./arquivos/texto.md');
