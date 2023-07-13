@@ -9,10 +9,14 @@ function trataErro (erro) {
 
 // async/await
 
-function pegaArquivo(caminhoDoArquivo) {
-    const encoding = 'utf-8';
-    const texto = fs.promises.readFile(caminhoDoArquivo, encoding)
-    console.log(texto);
+async function pegaArquivo(caminhoDoArquivo) {
+  try {
+const encoding = 'utf-8';
+      const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
+      console.log(chalk.geent(texto));
+  } catch (erro) {
+      trataErro(erro)
+  }
 }
 
 // promeses com then()
@@ -34,3 +38,4 @@ function pegaArquivo(caminhoDoArquivo) {
 //}
 
 pegaArquivo('./arquivos/texto.md');
+pegaArquivo('./arquivos/');
