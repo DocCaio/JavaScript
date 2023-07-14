@@ -1,7 +1,7 @@
 import fs from 'fs';
 import chalk from 'chalk';
 
-const textoTexte = 'Teste';
+
 
 function extraiLinks(texto) {
   const regex = /\[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)/gm;
@@ -27,7 +27,7 @@ async function pegaArquivo(caminhoDoArquivo) {
   try {
 const encoding = 'utf-8';
       const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
-      console.log(chalk.geent(texto));
+      extraiLinks(texto);
   } catch (erro) {
       trataErro(erro)
   }
