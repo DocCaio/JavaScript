@@ -53,5 +53,5 @@ const encoding = 'utf-8';
    // })
 //}
 
-pegaArquivo('./arquivos/texto.md');
+export default pegaArquivo;
 
