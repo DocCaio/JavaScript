@@ -4,7 +4,7 @@ import pegaArquivo from "./index.js";
 
 const caminho = process.argv;
 
-function imprimeLista(resultado , identificador) {
+function imprimeLista(resultado , identificador = '') {
     console.log(
         chalk.yellow('lista de links') ,
         chalk.black.bgGreen(identificador),
@@ -29,7 +29,7 @@ async function processaTexto(argumentos) {
         const arquivos = await fs.promises.readdir(caminho)
         arquivos.forEach(async(nomeDeAquivo) => {            
             const lista = await pegaArquivo(`${caminho}/${nomeDeAquivo}`)
-           imprimeLista(lista);
+           imprimeLista(lista , nomeDeAquivo);
         })
         console.log(arquivos);
     }
