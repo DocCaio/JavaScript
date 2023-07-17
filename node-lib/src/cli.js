@@ -4,18 +4,32 @@ import pegaArquivo from "./index.js";
 
 const caminho = process.argv;
 
+function imprimeLista(resultado , identificador) {
+    console.log(
+        chalk.yellow('lista de links') ,
+        chalk.black.bgGreen(identificador),
+         resultado );
+}
+
 async function processaTexto(argumentos) {
     const caminho = argumentos[2];
 
+    try {
+        fs.linkSync(caminho);
+    } catch (erro) {
+       if (erro.code === 'ENOENT')
+       console.log('arquivo ou diretório não existe');
+       return;
+    }
+
     if (fs.lstatSync(caminho).isFile()) {
         const resultado = await pegaArquivo(argumentos[2]);
-        console.log(chalk.yellow('lista de links') , resultado);
+        imprimeLista(resultado);
     }  else if (fs.lstatSync(caminho).isDirectory()) {
         const arquivos = await fs.promises.readdir(caminho)
         arquivos.forEach(async(nomeDeAquivo) => {            
             const lista = await pegaArquivo(`${caminho}/${nomeDeAquivo}`)
-            console.log(`${caminho}/${nomeDeAquivo}`);
-            console.log(lista);
+           imprimeLista(lista);
         })
         console.log(arquivos);
     }
