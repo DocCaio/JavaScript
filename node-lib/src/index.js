@@ -27,7 +27,7 @@ async function pegaArquivo(caminhoDoArquivo) {
   try {
 const encoding = 'utf-8';
       const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
-      extraiLinks(texto);
+     return extraiLinks(texto);
   } catch (erro) {
       trataErro(erro)
   }
