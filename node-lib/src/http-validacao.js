@@ -22,7 +22,12 @@ async function checaStatus (listaURLs) {
 }
 
 function manejaErros (erro) {
-    console.log(chalk.red('algo deu errado'), erro);
+    if (erro.cause.code === 'ENOTDOUND') {
+      return 'link não encontrado';      
+
+    } else {
+      return 'ocorreu algum erro';
+    }
 }
 
 export default async   function listaValidada (listaDeLinks) {
