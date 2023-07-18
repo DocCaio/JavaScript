@@ -10,7 +10,10 @@ async function checaStatus (listaURLs) {
 }
 
 export default   function listaValidada (listaDeLinks) {
-   return extrairLinks(listaDeLinks);
+  const links = extrairLinks(listaDeLinks);
+  const status = checaStatus(links);
+  console.log(status);
+  return status;
 }
 
 
