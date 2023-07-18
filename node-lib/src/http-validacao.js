@@ -1,19 +1,39 @@
+import chalk from "chalk";
+
 function extrairLinks (arrLinks) {
   return arrLinks.map((objetoLink) => Object.values(objetoLink).join())
 }
 
 async function checaStatus (listaURLs) {
-  return listaURLs.map(async (url) => {
-      const response = await fetch(url)
-      return response.status;
-  })
+  const arrStatus = await Promise
+   .all(
+    listaURLs.map(async (url) => {
+      try {
+        const response = await fetch(url)
+        return response.status;
+
+      } catch (erro) {
+         return manejaErros(erro);
+      }
+})
+
+  )
+  return arrStatus;
 }
 
-export default   function listaValidada (listaDeLinks) {
+function manejaErros (erro) {
+    console.log(chalk.red('algo deu errado'), erro);
+}
+
+export default async   function listaValidada (listaDeLinks) {
   const links = extrairLinks(listaDeLinks);
-  const status = checaStatus(links);
-  console.log(status);
-  return status;
+  const status = await checaStatus(links);
+  //console.log(status);
+  return listaDeLinks.map((Objeto , indice) => ({
+    ...Objeto,
+    status: status[indice]
+
+  }) )
 }
 
 
