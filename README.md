@@ -1,4 +1,4 @@
 # Curso JavaScript
-> Testes
+>Curso e testes
 
 ```Projetos teste de JS```
