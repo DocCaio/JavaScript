@@ -1,0 +1,9 @@
+submit: Este evento ocorre quando o formulário é enviado, geralmente acionado ao pressionar um botão de envio.
+
+input: É acionado quando um campo de entrada (input) ou textarea é modificado. Isso inclui digitar, colar ou deletar texto.
+
+change: Esse evento é acionado quando o valor de um campo de entrada é alterado e o campo perde o foco. Funciona bem com caixas de seleção, botões de rádio e elementos select.
+
+click: é acionado quando o usuário clica em um elemento da página, como um botão, link, imagem, ou qualquer outro elemento interativo.
+
+select: Este evento é acionado quando o usuário seleciona um texto dentro de um campo de input ou textarea.
