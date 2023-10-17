@@ -15,3 +15,8 @@ Rápida descrição do objetivo de fazer esse projeto
 ## Detalhes do projeto
 
 Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
+
+
+ <div  align="center">
+<img height="230em" src="https://streak-stats.demolab.com/?user=Doccaio&theme=radical" alt="Docccaio" />                                                                                                                                    
+</div>
