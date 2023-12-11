@@ -1,13 +1,15 @@
 {
-  "name": "cursojs",
+  "name": "nodejs-vidflow",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "prettier": "3.0.3"
+  }
 }
