@@ -1,14 +1,23 @@
 {
-  "name": "nodejs-vidflow",
-  "version": "1.0.0",
-  "description": "![Imagem de capa do curso. O título é \"3519 - Node.js e terminal\" e o subtítulo é \"Dominando o ambiente de desenvolvimento front-end\".](./thumb.png)",
-  "main": "script.js",
+  "name": "nodejs-vidflow-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "build-preview": "vite build --watch",
+    "preview": "vite preview",
+    "api-local": "json-server --watch backend/videos.json",
+    "lint": "eslint ."
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.55.0"
+    "vite": "^4.4.5",
+    "eslint": "8.52.0",
+    "json-server": "0.17.4",
+    "prettier": "3.0.3"
+  },
+  "dependencies": {
+    "axios": "1.6.0"
   }
 }
