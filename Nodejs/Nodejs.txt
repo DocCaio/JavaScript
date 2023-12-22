@@ -14,3 +14,15 @@ npm start para testar no terminal
 
 
 
+:root {
+    --variaveis: ;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root{
+        --variaveis: ;
+    }
+}
+ 
+Você declara as variáveis dentro de :root, não é?
+O que ficar dentro do media query vai ser aplicado quando o usuário colocar o sistema no modo escuro
