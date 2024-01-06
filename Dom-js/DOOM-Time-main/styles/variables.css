@@ -1,0 +1,12 @@
+@import url("desktop.css");
+@import url("mobile-tablet.css");
+@import url("task.css");
+:root {
+    --color-primary: #123456;
+    --color-secondary: #FFF;
+    --azul-royal: #144480;
+    --fundo-card-timer: rgba(20, 68, 128, 0.30);
+    --lils: #B872FF;
+    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+    --fundo-game-over:rgba(12, 12, 13, 0.851);
+}
