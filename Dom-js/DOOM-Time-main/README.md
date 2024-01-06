@@ -13,6 +13,6 @@
 
 ### Print
 
- <img src="https://github.com/DocCaio/DOOM-Time/blob/main/img/print.png" alt="Minha Figura">
+ <img src="https://github.com/DocCaio/JavaScript/blob/main/Dom-js/DOOM-Time-main/img/print.png" alt="Minha Figura">
 
 
