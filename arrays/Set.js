@@ -1,10 +1,8 @@
 const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
 
-//const meuSet = new Set();
+// const nomesAtualizados = new Set(nomes);
 
-//const nomesAtualizados = [...meuSet];
+const listaNomesAtualizados = [...new Set(nomes)];
 
-
-const nomesAtualizados = [...new Set(nomes)];
-
-console.log(nomesAtualizados);
+// console.log(nomesAtualizados);
+console.log(listaNomesAtualizados);
