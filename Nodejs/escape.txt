@@ -1,0 +1,9 @@
+Alguns exemplos de caracteres de escape:
+
+\' insere aspas simples
+\" insere aspas duplas
+\\ insere barra invertida
+\n insere nova linha (new line)
+\r insere nova linha (carriage return)
+\t insere tabulação
+\b insere backspace
