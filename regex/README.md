@@ -3,6 +3,9 @@
 
 Este repositório contém material do curso sobre Expressões Regulares. As expressões regulares, frequentemente chamadas de "regex" ou "regexp", são poderosas ferramentas para busca, validação e manipulação de texto. Este curso visa fornecer uma introdução abrangente e prática ao mundo das expressões regulares.
 
+## Site para treino
+https://regex101.com/
+
 ## Como Usar
 
 Clone este repositório para sua máquina local:
